@@ -1,0 +1,50 @@
+/* Write your CSS here */
+.bg-container {
+  display: flex;
+  margin: 0px;
+}
+
+.grey-background-bg {
+  background-color: #323f4b;
+  padding: 20px;
+  width: 70vw;
+  overflow: auto;
+}
+
+.event-color {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.event-items-card {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.second-part-div {
+  width: 30vw;
+}
+
+@media (max-width: 767px) {
+  .bg-container {
+    flex-direction: column;
+  }
+  .grey-background-bg {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .second-part-div {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 767px) {
+  .bg-container {
+    height: 100vh;
+  }
+}
